@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: fit-content;
+  width: 100%;
+  background-color: #e2fad0;
+  font-family: "roboto";
+  /* overflow-y: hidden; */
+}
+.heading {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  /* background-color: aqua; */
+  justify-content: center;
+  align-items: center;
+  margin: 3vh 0;
+  font-family: "Poppins";
+}
+.heading h1 {
+  font-size: 5vw;
+  color: #48a300;
+  padding: 2vh 0;
+}
+.heading :nth-last-child(1) {
+  color: #61481c;
+}
+.container {
+  height: fit-content;
+  margin: 3vh 27vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  padding: 2vh 3vw;
+}
+.containerTop {
+  height: 35%;
+  width: 100%;
+  margin-bottom: 2vh;
+}
+.today {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  font-family: "Poppins";
+  margin-bottom: 20px;
+}
+.today h2 {
+  font-size: 2vw;
+}
+.today img {
+  height: 50px;
+  width: 50px;
+}
+.progressbar {
+  background-color: #cbf1ad;
+  height: 30px;
+  width: 100%;
+  border-radius: 30px;
+  margin: 2vh 0;
+}
+.progressValue {
+  background-color: #48a300;
+  height: 30px;
+  width: 0%;
+  border-radius: 30px;
+  margin: 2vh 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+}
+.progressValue span {
+  margin-left: 2vw;
+  font-size: 12px;
+}
+.userMessage-1 {
+  color: rgb(137, 137, 137);
+}
+.userMessage-2 {
+  color: red;
+  display: none;
+}
+.containerMiddle {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 1vh 0;
+}
+.goal {
+  height: 12vh;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(137, 137, 137);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 2vw;
+  color: rgb(152, 152, 152);
+  flex-shrink: none;
+}
+.goal input {
+  border: none;
+  /* cursor: not-allowed; */
+  background-color: transparent;
+  font-size: 1.2vw;
+  font-weight: 600;
+  width: 100%;
+}
+.goal input:focus {
+  outline: none;
+}
+.checkerLogo {
+  height: 20px;
+  width: 20px;
+  border: 3px solid rgb(137, 137, 137);
+  border-radius: 50px;
+  display: flex;
+  font-size: 1vw;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+}
+.checked {
+  background-color: #48a300;
+  border: 3px solid #48a300;
+}
+.inputChecked {
+  color: #48a300;
+  text-decoration: line-through;
+  transition: all 0.5s;
+}
+.containerBottom {
+  height: 10%;
+  width: 100%;
+  text-align: center;
+}
+.userMessage-3 {
+  font-weight: 500;
+  margin: 6vh;
+}
+h4 {
+  font-weight: 300;
+  margin: 4vh;
+  font-size: 0.7vw;
+}
+
+@media (max-width: 600px) {
+  .heading {
+    height: 10%;
+    padding: 0vh 2vw;
+    margin: 1vh 0;
+  }
+  .heading h1 {
+    font-size: 10vw;
+  }
+  .container {
+    height: fit-content;
+    margin: 0vh 5vw;
+    padding: 2vh 5vw;
+  }
+  .containerTop {
+    height: 28%;
+    margin-bottom: 2vh;
+  }
+  .today {
+    gap: 10px;
+    margin: 10px 0;
+    margin-bottom: 10px;
+  }
+  .today img {
+    height: 30px;
+    width: 30px;
+  }
+  .today h2 {
+    font-size: 5vw;
+  }
+  .progressbar {
+    height: 20px;
+    margin: 1.5vh 0;
+  }
+  .progressValue {
+    height: 20px;
+    margin: 1.5vh 0;
+  }
+  .progressValue span {
+    margin-left: 5vw;
+    font-size: 10px;
+  }
+  .checkerLogo {
+    font-size: 3vw;
+  }
+  .userMessage-1 {
+    font-size: 3.5vw;
+  }
+  .userMessage-2 {
+    font-size: 3.5vw;
+  }
+  .containerMiddle {
+    margin: 2vh 0;
+  }
+  .goal {
+    padding: 0 4vw;
+  }
+  .goal input {
+    font-size: 4vw;
+  }
+  .userMessage-3 {
+    font-size: 3.2vw;
+    margin: 3vh;
+  }
+  h4 {
+    margin: 2vh;
+    font-size: 3vw;
+  }
+}
